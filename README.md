@@ -1,2 +1,2 @@
-# lonanza
-loananza-web-app
+# lonanza Web App
+Loananza empowers individuals and financial institutions with precise, transparent, and innovative home loan predictions. Experience a smarter approach to home financing decisions.Loananza emerged from a belief that financial decisions should be data-driven and accessible. Dissatisfied with slow, unclear traditional processes, our team combined machine learning and Django expertise to predict home loan outcomes, evolving from a startup into a transformative community.It offers highly accurate predictions, transparent data analysis, and a user-friendly Django interface. Our continuously evolving models empower informed financial decisions, ensuring reliable, accessible insights for both borrowers and lenders, driven by machine learning excellence
