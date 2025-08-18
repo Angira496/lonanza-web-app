@@ -1,0 +1,212 @@
+{% load static %}
+{% include 'inc/header.html' %}
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50
+                d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"
+             style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small>
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>Kolkata, West Bengal, India
+                </small>
+                <small class="ms-4">
+                    <i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm
+                </small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>
+                    <i class="fa fa-envelope text-primary me-2"></i>info@loananza.com
+                </small>
+                <small class="ms-4">
+                    <i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789
+                </small>
+            </div>
+        </div>
+
+        {% include "inc/menu.html" %}
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/carousel-4.jpg' %}" alt="Analysis Banner">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <p class="d-inline-block border border-white rounded text-primary
+                                               fw-semi-bold py-1 px-3 animated slideInDown">
+                                        Welcome to Loananza
+                                    </p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">Analysis</h1>
+                                    <a href="#dataset-section"
+                                       class="btn btn-primary py-3 px-5 animated slideInDown">
+                                        Explore More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Carousel End -->
+
+    <!-- Dataset Section Start -->
+    <div id="dataset-section" class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- Dataset Information -->
+          <div class="col-md-6 text-center">
+            <h3 class="mb-4">Dataset Information</h3>
+            <div class="card h-100 shadow-lg"
+                 style="box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/dataset_info.png' %}"
+                     alt="Dataset Info"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <!-- Columns Used for Feature Engineering -->
+          <div class="col-md-6 text-center">
+            <h3 class="mb-4">Columns Used for Feature Engineering</h3>
+            <div class="card h-100 shadow-lg"
+                 style="box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/columns_used_for_feature_engg.png' %}"
+                     alt="Feature Engineering Columns"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Dataset Section End -->
+
+    <!-- Loan Status Distribution Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Loan Status Distribution</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card shadow-lg"
+                 style="box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/loan_status.png' %}"
+                     alt="Loan Status Distribution"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Loan Status Distribution End -->
+
+    <!-- Distribution Plots Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Income &amp; Loan Amount Distributions</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="card shadow-lg"
+                 style="box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/distribution.png' %}"
+                     alt="Income and Loan Amount Distributions"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Distribution Plots End -->
+
+    <!-- Loan Distribution Analysis Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Loan Distribution by Demographic &amp; Credit Factors</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="card shadow-lg"
+                 style="box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/loan_distribution.png' %}"
+                     alt="Loan Distribution by Demographics and Credit History"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Loan Distribution Analysis End -->
+
+    <!-- Customer Demographics & Loan Status Analysis Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <h3 class="text-center mb-4">Customer Demographics &amp; Loan Status Analysis</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="card shadow-lg"
+                 style="box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/demographics_loan_status.png' %}"
+                     alt="Demographics vs Loan Status"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Customer Demographics & Loan Status Analysis End -->
+
+
+
+    <!-- Insights Paragraph Start -->
+    <div class="container-xxl py-4">
+      <div class="container">
+        <p class="fs-5 text-center">
+          The loan approval analysis reveals that financial stability and demographic factors significantly
+          influence lending decisions. Graduates, non-self-employed individuals, and those with strong credit
+          histories have higher approval rates, likely due to better earning potential and consistent incomes.
+          Semiurban residents see more approvals, while males apply more, though gender has minimal impact on
+          outcomes. Married applicants and those without dependents are favored, reflecting perceived financial
+          reliability. Most applicants are graduates with good credit and reside in varied property areas.
+          Additionally, the distributions of incomes and loan amounts are positively skewed with outliers,
+          while loan amount term is negatively skewed, also containing outliers.
+        </p>
+      </div>
+    </div>
+    <!-- Insights Paragraph End -->
+
+
+
+
+{% include 'inc/footer.html' %}

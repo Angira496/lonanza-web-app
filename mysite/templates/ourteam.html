@@ -1,0 +1,152 @@
+{% load static %}
+{% include 'inc/header.html' %}
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Kolkata, West Bengal, India</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>info@loananza.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</small>
+            </div>
+        </div>
+        {% include "inc/menu.html" %}
+
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/carousel-5.jpg' %}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <p
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                        Welcome to Loananza</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">Meet Our Team
+                                    </h1>
+                                    <a href="#move_to_ourteam" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+    <!-- Team Start - Team Project Members -->
+    <div class="container-xxl py-5" id="move_to_ourteam">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Team</p>
+                <h1 class="display-5 mb-5">Exclusive Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="{% static 'img/Angira.jpg' %}" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Angira Banerjee</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="{% static 'img/Pratyush.jpg' %}" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0" style="white-space: nowrap;">Pratyush Chakraborty</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="{% static 'img/reekparna.jpg' %}" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Reekparna Sen</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End - Team Project Members -->
+
+
+
+        <!-- Team Start - Mentor Members -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Our Mentors</p>
+                <h1 class="display-5 mb-5">Exclusive Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="{% static 'img/Indranil.JPG' %}" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Indranil Sarkar</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="{% static 'img/hod.jpg' %}" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Chiranjib Dutta</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <img class="img-fluid rounded" src="{% static 'img/shirshendu.jpg' %}" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">Shirsendu Dutta</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End - Mentor Members -->
+
+
+
+
+    <!-- Testimonial End -->
+
+{% include 'inc/footer.html' %}

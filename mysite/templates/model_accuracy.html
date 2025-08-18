@@ -1,0 +1,258 @@
+{% load static %}
+{% include 'inc/header.html' %}
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Kolkata, West Bengal, India</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>info@loananza.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</small>
+            </div>
+        </div>
+
+        {% include "inc/menu.html" %}
+
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/carousel-3.jpg' %}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <p
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                        Welcome to Loananza</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">Model Accuracy
+                                    </h1>
+                                    <a href="#move_to_algo" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Used Algorithms Start -->
+  <div class="container-xxl py-5" id="move_to_algo">
+    <div class="container">
+      <h2 class="text-center mb-5">Used Algorithms</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/used_algorithms.png' %}"
+                   alt="Used Algorithms"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Used Algorithms End -->
+
+  <!-- KNN Algorithm Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">KNN Algorithm</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/knn_parameters.png' %}"
+                   alt="KNN Parameters"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/knn.png' %}"
+                   alt="KNN Confusion Matrix"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- KNN Algorithm End -->
+
+  <!-- Logistic Regression  Algorithm Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Logistic Regression Algorithm</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/logistic_parameters.png' %}"
+                   alt="Logistic Regression Parameters"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/logistic.png' %}"
+                   alt="Logistic Regression Confusion Matrix"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Logistic Algorithm End -->
+
+    <!-- Naive Baye's Algorithm Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Naive Baye's Algorithm</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/naive_bayes_parameters.png' %}"
+                   alt="Naive Baye's Parameters"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/naive_bayes.png' %}"
+                   alt="Naive Baye's Confusion Matrix"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Naive Baye's Algorithm End -->
+
+   <!-- Decision Tree Algorithm Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Decision Tree Algorithm</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/decision_tree_parameters.png' %}"
+                   alt="Decision Tree Parameters"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/decision_tree.png' %}"
+                   alt="Decision Tree Confusion Matrix"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Decision Tree Algorithm End -->
+
+  <!-- Random Forest Algorithm Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Random Forest Algorithm</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/random_forest_parameters.png' %}"
+                   alt="Random Forest Parameters"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-lg">
+            <div class="card-body d-flex align-items-center justify-content-center">
+              <img src="{% static 'img/random_forest.png' %}"
+                   alt="Random Forest Confusion Matrix"
+                   class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Random Forest Algorithm End -->
+
+  <!-- Model Accuracy Comparison Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Model Accuracy Comparison</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card h-100 shadow-lg">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/model_accuracy_comparision.png' %}"
+                     alt="Model Accuracy Comparison"
+                     class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+              <br>
+            <p class="text-center fs-5">
+              Based on the accuracy scores of different models, Logistic Regression performed the best with an accuracy of <strong>84.95%</strong>.
+              It not only outperformed other models in terms of accuracy but also showed high precision and recall, making it a reliable and balanced choice.
+              Therefore, Logistic Regression is selected as the most suitable algorithm for this project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Model Accuracy Comparison End -->
+
+
+
+
+{% include 'inc/footer.html' %}

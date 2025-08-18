@@ -1,0 +1,147 @@
+{% load static %}
+{% include 'inc/header.html' %}
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt text-primary me-2"></i>Kolkata, West Bengal, India</small>
+                <small class="ms-4"><i class="fa fa-clock text-primary me-2"></i>9.00 am - 9.00 pm</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small><i class="fa fa-envelope text-primary me-2"></i>info@loananza.com</small>
+                <small class="ms-4"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</small>
+            </div>
+        </div>
+        {% include "inc/menu.html" %}
+
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static 'img/carousel-2.jpg' %}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8">
+                                    <p
+                                        class="d-inline-block border border-white rounded text-primary fw-semi-bold py-1 px-3 animated slideInDown">
+                                        Welcome to Loananza</p>
+                                    <h1 class="display-1 mb-4 animated slideInDown">Let's Predict
+                                    </h1>
+                                    <a href="#move_to_predict" class="btn btn-primary py-3 px-5 animated slideInDown">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+<!-- Callback Start -->
+<div class="container-fluid callback my-5 pt-5" id="move_to_predict">
+    <div class="container pt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s" style="padding: 2rem;">
+                    <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                        <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
+                            Loan Application
+                        </p>
+                        <h1 class="display-5 mb-5">Request A Call-Back</h1>
+                    </div>
+
+
+                    <form action="/result/" method="post">
+
+                        {% csrf_token%}
+                        <div class="row g-3">
+                            <!-- Self Employed (Options: Yes, No) -->
+                            <div class="col-12" style="margin-bottom: 1rem;">
+                                <label for="selfEmployed" style="display: block; margin-bottom: 0.5rem;">Self Employed (Yes, No)</label>
+                                <select id="selfEmployed" name="self-employed" class="form-select" style="padding: 0.75rem; width: 100%;">
+                                    <option value="">Select Option</option>
+                                    <option value="0">Yes</option>
+                                    <option value="1">No</option>
+                                </select>
+                            </div>
+                            <!-- Applicant Income (Numerical) -->
+                            <div class="col-12" style="margin-bottom: 1rem;">
+                                <label for="applicantIncome" style="display: block; margin-bottom: 0.5rem;">Applicant Income (Monthly) </label>
+                                <input type="number" name="applicant-income" id="applicantIncome" class="form-control" placeholder="Enter Monthly Applicant Income" style="padding: 0.75rem; width: 100%;">
+                            </div>
+                            <!-- Loan Amount (Numerical) -->
+                            <div class="col-12" style="margin-bottom: 1rem;">
+                                <label for="loanAmount" style="display: block; margin-bottom: 0.5rem;">Loan Amount (Thousand)</label>
+                                <input type="number" name="loan-amount" id="loanAmount" class="form-control" placeholder="Enter Loan Amount" style="padding: 0.75rem; width: 100%;">
+                            </div>
+                            <!-- Loan Amount Term (Numerical) -->
+                            <div class="col-12" style="margin-bottom: 1rem;">
+                                <label for="loanTerm" style="display: block; margin-bottom: 0.5rem;">Loan Amount Term (Monthly)</label>
+                                <input type="number" name="loan-term" id="loanTerm" class="form-control" placeholder="Enter Loan Amount Term" style="padding: 0.75rem; width: 100%;">
+                            </div>
+                            <!-- Credit History (Options: 1, 0) -->
+                            <div class="col-12" style="margin-bottom: 1rem;">
+                                <label for="creditHistory" style="display: block; margin-bottom: 0.5rem;">Credit History (1 = Yes, 0 = No)</label>
+                                <select id="creditHistory" name="credit-history" class="form-select" style="padding: 0.75rem; width: 100%;">
+                                    <option value="">Enter '1' if you've repaid your debts; otherwise, Enter '0'</option>
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                            <!-- Property Area (Options: Urban, Semi-Urban, Rural) -->
+                            <div class="col-12" style="margin-bottom: 1rem;">
+                                <label for="propertyArea" style="display: block; margin-bottom: 0.5rem;">Property Area (Urban, Semi-Urban, Rural)</label>
+                                <select id="propertyArea" name="property-area" class="form-select" style="padding: 0.75rem; width: 100%;">
+                                    <option value="">Select Option</option>
+                                    <option value="0">Urban</option>
+                                    <option value="1">Semi-Urban</option>
+                                    <option value="2">Rural</option>
+                                </select>
+                            </div>
+
+
+                            <!-- Loan Status (Options: 1, 0) -->
+                            <!--<div class="col-12" style="margin-bottom: 1rem;">-->
+                            <!--    <label for="loanStatus" style="display: block; margin-bottom: 0.5rem;">Loan Status (1, 0)</label>-->
+                            <!--    <select id="loanStatus" class="form-select" style="padding: 0.75rem; width: 100%;">-->
+                            <!--        <option value="">Select Option</option>-->
+                            <!--        <option value="1">1</option>-->
+                            <!--        <option value="0">0</option>-->
+                            <!--    </select>-->
+                            <!--</div>-->
+
+
+                            <!-- Submit Button -->
+                            <div class="col-12 text-center" style="margin-top: 1rem;">
+                                <button type="submit" class="btn btn-primary w-100 py-3" style="padding: 0.75rem;">Submit Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Callback End -->
+
+
+{% include 'inc/footer.html' %}
