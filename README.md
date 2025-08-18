@@ -9,5 +9,7 @@ https://ml27angira.pythonanywhere.com/
 <img width="1348" height="615" alt="image" src="https://github.com/user-attachments/assets/cc8a4e66-4d18-4093-bc68-e8342638f369" />
 <img width="1345" height="617" alt="image" src="https://github.com/user-attachments/assets/f3d183d6-29c1-4360-ae97-8a30e5991d61" />
 <img width="1352" height="596" alt="image" src="https://github.com/user-attachments/assets/5856f9f4-0d00-42a5-8114-4d7cd3270d91" />
+<img width="1352" height="312" alt="image" src="https://github.com/user-attachments/assets/f588b561-0fc8-4856-960e-38a89e27689b" />
+
 
 
