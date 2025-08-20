@@ -12,4 +12,14 @@ https://ml27angira.pythonanywhere.com/
 <img width="1352" height="312" alt="image" src="https://github.com/user-attachments/assets/f588b561-0fc8-4856-960e-38a89e27689b" />
 
 
+This project proposal describes the overall plan for developing the Loan Prediction System. It includes how the software will work, the steps involved in completing the project, the tools and technologies used, and how the system will be analyzed and tested. The proposal also covers possible risks, expected benefits, and important elements that the project depends on. It gives a full picture of how the system will be designed and implemented.
+
+Online web-based machine learning applications are now widely used and popular. People are more interested in using intelligent systems to make fast and accurate decisions. The Loan Prediction System is especially useful for bank employees, helping them quickly decide whether to approve a loan application. This system makes the process faster, reduces human error, and improves decision-making.
+
+The main goal of this project is to build a machine learning-based model that can predict whether a person’s loan application should be approved or not. It will help financial institutions make better and faster decisions using data.
+
+This project focuses on using different machine learning techniques to predict if a person is likely to repay a loan. It compares various classification models and checks their performance using accuracy, precision, recall, and F1-score. The aim is to find the best model for accurate predictions.
+
+This system provides a web-based platform where users can check whether their loan is likely to be approved. The platform is built using Django and machine learning models. Users simply enter their details, and the system gives instant results. It helps make the loan process easier and more transparent for both banks and-applicants.
+
 
